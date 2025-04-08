@@ -1,0 +1,535 @@
+[08:19, 08/04/2025] daniel: ado o código:
+
+#include <stdio.h>
+
+int main()
+{
+   
+    int i;
+    i=10;
+    while(i<=4){
+        //intruções
+        i++;
+    };
+    printf("i=%d",i);
+    return 0;
+}
+
+Analise as afirmações:
+
+I - O valor inicial é i=10;
+II - A condição é i<=4;
+III - O contador é i++;
+IV - O looping foi executado uma vez;
+V - O valor que tornou a condição falsa foi 10.
+
+É correto o que se afirma em:
+*
+I, II, III e IV
+I, II, IV e V
+II, III, IV e V
+Todas as afirmações são verdadeiras.
+I, III, IV e V
+[08:19, 08/04/2025] daniel: Dado o código:
+
+#include <stdio.h>
+
+int main() {
+    int i,j;
+    for (int i=0; i<4; i++) {
+        ----------
+            printf("\n%d %d", i ,j);        
+        }
+    }
+    return 0;
+}
+
+Selecione a alternativa para substituir a linha tracejada para que a saída seja:
+
+0 3
+0 2
+0 1
+1 3
+1 2
+1 1
+2 3
+2 2
+2 1
+3 3
+3 2
+3 1
+*
+for (j=3; j>0; j--){
+for (j=3; j>=0; j--){
+for (j=0; j<3; j++){
+for (j=0; j<=3; j++){
+for (j=3; j>0; j++){
+[08:19, 08/04/2025] daniel: Dado o código:
+
+#include <stdio.h>
+
+int main()
+{
+    int i,j;
+   
+    i=0;while(i<3){
+       //-----
+            printf("\n%d %d",i,j);
+            j+=2;
+        }
+        i++;
+    }
+
+    return 0;
+}
+
+Selecione a alternativa para substituir a linha tracejada para que a saída seja:
+
+0 2
+0 4
+0 6
+1 2
+1 4
+1 6
+2 2
+2 4
+2 6
+*
+j=2;while(j<7){
+j=2;while(j<6){
+j=0;while(j<=2){
+j=0;while(j<=3){
+j=6;while(j>=2){
+[08:19, 08/04/2025] daniel: Dado o código:
+
+#include <stdio.h>
+
+int main()
+{
+   
+    int i;
+    i=10;
+   //-----
+    i--;
+    printf("i=%d",i/3);
+    return 0;
+}
+
+Selecione a alternativa para substituir a linha tracejada para que a saída seja:
+
+i=4
+*
+i++;
+i+=2;
+i+=3;
+i--;
+i-==4;
+[08:19, 08/04/2025] daniel: Dado o código:
+
+#include <stdio.h>
+int main()
+{
+   
+    float notas[7]={3.5, 6.0, 5.5, 7, 4, 6.5, 7};
+    int i;
+   //--------
+      
+    return 0;
+}
+
+Selecione a alternativa para substituir a linha tracejada para que a saída seja:
+
+6.5 6.0 7.5 4.5
+*
+for(i=1;i<5;i++) printf(" %.1f",notas[i]+0.5);
+for(i=1;i<5;i++) printf(" %.1f",notas[i]);
+for(i=1;i<6;i++) printf(" %.1f",notas[i]);
+for(i=1;i<6;i++) printf(" %.1f",notas[i]+0.5);
+for(i=0;i<5;i++) printf(" %.1f",notas[i]+0.5);
+[08:19, 08/04/2025] daniel: Dado o código:
+
+#include <stdio.h>
+int main()
+{
+    int numeros[10] = {15,2,3,5,17,22,45,33,78,92};
+    int i;
+   //-------
+        printf(" %d ",numeros[i]);
+    return 0;
+}
+
+Selecione a alternativa para substituir a linha tracejada para que a saída seja:
+
+
+5  17  22  45  33
+*
+for(i=3;i<9;i++)
+for(i=3;i<8;i++)
+for(i=4;i<9;i++)
+for(i=2;i<7;i++)
+for(i=2;i<8;i++)
+[08:19, 08/04/2025] daniel: Dado o código:
+
+#include <stdio.h>
+
+int main() {
+    int x = 0;
+    for (int i = 0; i < 5; i++) {
+       --------
+    }
+    printf("x=%d", x);
+    return 0;
+}
+
+Selecione a alternativa para substituir a linha tracejada para que a saída seja:
+
+x=5
+*
+x += i;
+x+3;
+i++;
+x+=1;
+i+=x;
+[08:20, 08/04/2025] daniel: Dado o código:
+
+#include <stdio.h>
+
+int main()
+{
+   
+    int a,b,c,d,e,f,g,h;
+    a=10;
+    b=20;
+    c=30;
+    d=120;
+    e=(a<=b);
+    f=(c<=b);
+    g=(c>=d) || (d>=a);
+    h=(c>=d) && (d>=a);
+     //-------
+    return 0;
+}
+
+Selecione a alternativa para substituir a linha tracejada para que a saída seja:
+
+0 , 1 , 3
+*
+printf("%d , %d , %d",e,f,b%7);
+printf("%d , %d , %d",7,e,f);
+printf("%d , %d , %d",f,e,a%7);
+printf("%d , %d , %d",e,f,b+3);
+printf("%d , %d , %d",f,e,a%3);
+[08:20, 08/04/2025] daniel: Dado o código:
+
+#include <stdio.h>
+
+int main()
+{
+   
+    int a,b,c,d,e,f,g,h;
+    a=10;
+    b=20;
+    c=30;
+    d=120;
+    e=(a<=b);
+    f=(c<=b);
+    g=(c>=d) || (d>=a);
+    h=(c>=d) && (d>=a);
+
+    return 0;
+}
+
+Selecione a alternativa que contém apenas as variáveis com resultado verdadeiro, na linguagem C,   1.
+*
+f g
+e g
+e f
+g h
+f h
+[08:20, 08/04/2025] daniel: Dado o código:
+
+#include <stdio.h>
+
+int main()
+{
+   
+    int a,b,c,d,e,f,g,h;
+    a=10;
+    b=20;
+    c=30;
+    d=120;
+    e=(a<=b);
+    f=(c<=b);
+    g=(c>=d) || (d>=a);
+    h=(c>=d) && (d>=a);
+
+    return 0;
+}
+
+Selecione a alternativa que contém apenas as variáveis com resultado falso, na linguagem C,   0.
+*
+f h
+g h
+e g
+f g
+e f
+[08:20, 08/04/2025] daniel: Dado o código:
+
+#include <stdio.h>
+int main()
+{
+    int numeros[10] = {15,2,3,5,17,22,45,33,78,92};
+    int i;
+//-----
+        printf(" %d ",numeros[i]);
+    return 0;
+}
+
+Selecione a alternativa para substituir a linha tracejada para que a saída seja:
+
+
+3  5  17  22  45 
+*
+for(i=2;i<7;i++)
+for(i=2;i<8;i++)
+for(i=3;i<8;i++)
+for(i=4;i<9;i++)
+for(i=3;i<9;i++)
+[08:20, 08/04/2025] daniel: Selecione a alternativa para uma estrutura de decisão com uma condição para verificar se um número é ímpar.
+*
+if(num*2==0){  }
+if(num%2==0){  }
+if(num%=2){  }
+if(num*2==1){  }
+if(num%2==1){  }
+[08:20, 08/04/2025] daniel: Dado o código:
+
+#include <stdio.h>
+
+int main()
+{
+   
+    int a,b,c,d,e,f,g,h;
+    a=10;
+    b=20;
+    c=30;
+    d=120;
+    e=(a<=b);
+    f=(c<=b);
+    g=(c>=d) || (d>=a);
+    h=(c>=d) && (d>=a);
+     //-------
+    return 0;
+}
+
+Selecione a alternativa para substituir a linha tracejada para que a saída seja:
+
+0 , 1 , 7
+*
+printf("%d , %d , %d",7,e,f);
+printf("%d , %d , %d",f,e,a%7);
+printf("%d , %d , %d",e,f,b%7);
+printf("%d , %d , %d",f,e,a-3);
+printf("%d , %d , %d",e,f,b+3);
+[08:20, 08/04/2025] daniel: Dado o código
+
+#include <stdio.h>
+
+int main()
+{
+   
+    int i;
+   //----
+        printf("%d ",i);
+    }
+    return 0;
+}
+
+Selecione a alternativa correta para substituir a linha tracejada para que a saída seja:
+
+22 19 16 13 
+
+*
+for(i=22;i>=13;i--){
+for(i=22;i>11;i-=3){
+for(i=10;i<=22;i+=3){
+for(i=10;i<=20;i+=3){
+for(i=22;i>11;i-=4){
+[08:20, 08/04/2025] daniel: Dado o código:
+
+#include <stdio.h>
+
+int main() {
+    int x = 0;
+    for (int i = 0; i < 5; i++) {
+       --------
+    }
+    printf("x=%d", x);
+    return 0;
+}
+
+Selecione a alternativa para substituir a linha tracejada para que a saída seja:
+
+x=10
+*
+x += i;
+x+3;
+i++;
+x+=1;
+i+=x;
+[08:20, 08/04/2025] daniel: Dado o código:
+
+#include <stdio.h>
+
+int main()
+{
+    //-----------
+    float n,res;
+    printf("Digite um número: ");
+    scanf("%f",&n);
+    res=n*a;
+    printf("res = %f",res);
+    return 0;
+}
+
+Selecione a alternativa para substituir a linha tracejada por uma constante, de forma que dado a entrada de n= 2, a saída seja:
+
+res = 7.000000
+*
+const float a=3.5;
+float a=3.5;
+const a=3.5;
+const int a=3.5;
+int a=3.5;
+[08:20, 08/04/2025] daniel: Dado o código:
+
+#include <stdio.h>
+
+int main()
+{
+    int i,j;
+   
+    i=0;while(i<3){
+       //-----
+            printf("\n%d %d",i,j);
+            j+=2;
+        }
+        i++;
+    }
+
+    return 0;
+}
+
+Selecione a alternativa para substituir a linha tracejada para que a saída seja:
+
+0 5
+0 7
+1 5
+1 7
+2 5
+2 7
+*
+j=5;while(j<9){
+j=5;while(j<10){
+j=0;while(j<=2){
+j=0;while(j<=3){
+j=7;while(j>=5){
+[08:20, 08/04/2025] daniel: Dado o código
+
+int main()
+{
+    int a,b,c,d;
+    a=10;
+    b=20;
+    c=5;
+     //------
+    printf("d=%d",d);
+    return 0;
+}
+
+Selecione a alternativa para substituir a linha tracejada para que a saída seja:
+
+d=1
+
+ou seja, variável d recebe um valor verdadeiro.
+*
+d=(c>=a)||!(c>=b);
+d=!(c<b)||(a<=c);
+d=!(c<b)||(b<=a);
+d=(a<=b)&&(c>=b);
+d=(a<b)&&!(c<b);
+[08:20, 08/04/2025] daniel: Dado o código:
+
+#include <stdio.h>
+
+int main()
+{
+   
+    int i;
+    i=10;
+    do{
+        //intruções
+        i++;
+    }while(i<=4);
+    return 0;
+}
+
+Analise as afirmações:
+
+I - O valor inicial é i=10;
+II - A condição é i<=4;
+III - O contador é i++;
+IV - O looping não foi executado nenhuma vez;
+V - O valor que tornou a condição falsa foi 4.
+
+É correto o que se afirma em:
+*
+I, III e V
+I, II, e IV
+II, III e V
+I, II e III
+III, IV e V
+[08:20, 08/04/2025] daniel: Dado o código
+
+#include <stdio.h>
+
+int main()
+{
+   
+    int i;
+   //----
+        printf("%d ",i);
+    }
+    return 0;
+}
+
+Selecione a alternativa correta para substituir a linha tracejada para que a saída seja:
+
+10 13 16 19 22
+
+*
+for(i=10;i<22;i+=4){
+for(i=10;i<22;i+=3){
+for(i=10;i<=20;i+=3){
+for(i=10;i<=22;i+=4){
+for(i=10;i<=22;i+=3){
+
+[08:25, 08/04/2025] Vitu: for (j=3; j>0; j--){
+[08:29, 08/04/2025] Vitu: j=2; while(j<7){
+[08:30, 08/04/2025] Vitu: i += 3;
+[08:31, 08/04/2025] Vitu: for(i=1;i<5;i++) printf(" %.1f",notas[i]+0.5);
+[08:32, 08/04/2025] Vitu: for(i=3;i<8;i++)
+[08:33, 08/04/2025] Vitu: x += 1;
+[08:33, 08/04/2025] Vitu: printf("%d , %d , %d",f,e,a%7);
+[08:35, 08/04/2025] Vitu: e g
+[08:36, 08/04/2025] Vitu: f h
+[08:37, 08/04/2025] Vitu: for(i=2;i<7;i++)
+[08:37, 08/04/2025] Vitu: if(num%2==1){ }
+[08:38, 08/04/2025] Vitu: printf("%d , %d , %d",f,e,a-3);
+[08:39, 08/04/2025] Vitu: for(i=22;i>11;i-=3){
+[08:40, 08/04/2025] Vitu: X += i;
+[08:41, 08/04/2025] Vitu: const float a=3.5;
+[08:42, 08/04/2025] Vitu: j=5;while(j<9){
+[08:42, 08/04/2025] Vitu: d=(c>=a)||!(c>=b);
+[08:43, 08/04/2025] Vitu: I, II e III
+[08:43, 08/04/2025] Vitu: for(i=10;i<=22;i+=3){
